@@ -10,7 +10,7 @@ const JWT_SECRET = 'your_secret_key'; // Change this to a secure secret key
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-mongoose.connect('mongodb+srv://mamex:jaksonfafa@cluster0.z65xuf6.mongodb.net/TkomaApp?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://user@cluster0.z65xuf6.mongodb.net/TkomaApp?retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
